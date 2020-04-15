@@ -1,0 +1,45 @@
+.profile-receive-form{
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
+    font-size: 20px;
+    padding:20px;
+    .profile-receive-item{
+        margin:10px;
+        padding:10px;
+        border-bottom : 1px solid #ec8f8f;
+        height: 60px;
+    }
+    input{
+        border:none;
+        width: 100%;
+        line-height: 40px;
+        height: 40px;
+        color:#e88e30;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            color:rgba(222, 170, 154, 0.99);
+        }
+    }
+    .profile-receive-item:nth-child(3){
+        display: flex;
+        align-items: center;
+        color:rgba(222, 170, 154, 0.99)
+    }
+    .profile-receive-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        button{
+            width: 60%;
+            border-radius: 50px;
+            background-color: lightpink;
+            color:white;
+            font-weight: bold;
+            height: 40px;
+            font-size: 18px;
+        }
+    }
+}

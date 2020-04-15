@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="yehuozhili">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-startup-image" href="icon.png">
+    <meta name="apple-mobile-web-app-title" content="益百分小电商">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>益百分</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            function refreshRem() {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 750 * 100 + 'px';
+            }
+            refreshRem()
+            window.addEventListener('resize', refreshRem, false)
+        })()
+
+    </script>
+    <div id="root"></div>
+</body>
+
+</html>

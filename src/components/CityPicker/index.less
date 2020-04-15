@@ -1,0 +1,83 @@
+.city-picker-container{
+    position: absolute;
+    bottom:0;
+    z-index: 4000;
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    .city-picker-main{
+        position: relative;
+        height: 500px;
+        .city-picker-title{
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 23px;
+            border-bottom: 1px solid #eac9c9;
+            font-weight: bold;
+            color:#e87c20;
+        }
+    }
+    .city-picker-display{
+        height: 60px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        border-bottom: 1px solid #eac9c9;
+        font-weight: bold;
+        color:#de8f8f;
+        span{
+            margin-left: 10px;
+        }
+    }
+    .city-picker-x ,.city-picker-y,.city-picker-z{
+        position: absolute;
+        width:  50%;
+        padding:20px;
+        overflow:scroll;
+        font-size: 20px;
+        height:6rem;
+        height: calc(100% - 0.8rem - 0.6rem);
+        font-weight: bold;
+        color:#eb6d6d;
+        div{
+            margin: 5px;
+            padding:10px;
+            overflow: hidden;
+            white-space: nowrap;
+            border-bottom: 1px solid #eac9c9;
+        }
+    }
+    .city-picker-x{
+        left:0;
+        background-color: #fff5ec;
+    }
+    .city-picker-y{
+        right: 0;
+        background-color: #f1f7ea;
+    }
+    .city-picker-z{
+        right: 0;
+        background-color: #f1f7ea;
+    }
+}
+.city-picker-mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom:0;
+    background-color: #b4b4b47d;
+    z-index: 3000;
+}
+
+@keyframes conainerSlide{
+    0%{
+        transform: translate3d(0,5rem,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}

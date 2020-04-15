@@ -1,0 +1,104 @@
+.user-unlogin{
+    position: relative;
+    .unloginbox{
+        position: absolute;
+        top:30vh;
+        width:100%;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .ant-alert{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            span{
+                font-size: 20px;
+            }
+        }
+        .unlogin-button{
+            width: 80%;
+            height: 2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .ant-btn{
+                height: 0.63rem;
+                font-size: 20px;
+                border-radius: 50px;
+                width: 100px;
+            }
+          
+        }
+      
+    }
+}
+.user-info{
+    display: flex;
+    padding:20px;
+    font-size: 20px;
+    height: 25%;
+    background: lightpink;
+    background-image: linear-gradient(90deg,  lightpink 0%, white 150%);
+    position: relative;
+    .ant-avatar{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        overflow: hidden;
+        display: block;
+        border:5px solid  rgba(255, 0, 0, 0.2)
+    }
+    .user-textarea{
+        color: #e24747;
+        font-weight: bold;
+        flex:1;
+        padding-left:30px;
+        div:nth-child(1){
+            height: 60px; 
+            width: 100%;
+            span{
+                line-height: 60px;
+                font-size: 30px;
+            } 
+        }
+        div:nth-child(2){
+            height: 40px;
+            width: 100%;
+            span{
+                line-height: 40px;
+                font-size: 20px;
+            }
+        }
+    }
+    .user-viewport{
+        position: absolute;
+        width: 80%;
+        height: 70px;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        top:80%;
+        left:10%;
+        z-index: 100;
+        box-shadow: 0 0.05rem 0.1rem 0px #0000003b;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+        div:nth-child(1){
+            flex:1;
+            border-right: #00000063  solid 1px;
+            a{
+                color: rgba(0, 0, 0, 0.65);
+            }
+        }
+        div:nth-child(2){
+            flex:1;
+        }
+    }
+}

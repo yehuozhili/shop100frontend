@@ -1,0 +1,109 @@
+.ant-table{
+    font-size: 20px;
+    .ant-input-number{
+        font-size: 20px;
+       .ant-input-number-input{
+           text-align: center;
+       }
+    }
+  
+    td{
+        vertical-align: middle;
+        text-align: center;
+        .ant-btn{
+            background-color: red;
+            color:white;
+            border-radius: 50px;
+            &:hover{
+                border:none;
+            }
+        }
+    }
+}
+.ant-popover{
+    font-size: 20px;
+    .ant-popover-message{
+        font-size: 20px;
+        i{
+            font-size: 20px;
+        }
+    }
+    .ant-popover-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        button{
+            width: 50%;
+            font-size: 20px;
+            height: 30px;
+            
+        }
+       
+    }
+}
+
+
+.cart-footer{
+    border-top: 1px solid lightpink;
+    position: static;
+    z-index: 1000;
+    width: 100%;
+    bottom: 1.2rem;
+    padding:10px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:white;
+    .settle{
+        flex:1;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        button{
+            color:white;
+            background-color: rosybrown;
+            border-radius: 50px;
+            height: 40px;
+            width: 150px;
+            &:hover{
+                border:none;
+            }
+        }
+        div:nth-child(1){
+           flex:1;
+        }
+        div:nth-child(2){
+           flex:1;
+           text-align: right;
+           padding:5px;
+        }
+    }
+    .charge{
+        flex:0;
+        width: 100%;
+        font-size: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        button{
+            background-color: lightpink;
+            font-size: 20px;
+            height: 40px;
+            width: 100px;
+            color:white;
+            border-radius: 50px;
+        }
+    }
+
+}
+.cart-table{
+    position: static;
+    height:90% ;
+    overflow: scroll;
+}

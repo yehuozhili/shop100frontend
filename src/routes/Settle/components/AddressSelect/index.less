@@ -1,0 +1,47 @@
+.address-selector{
+    background-color: white;
+    position: absolute;
+    z-index: 4000;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    height: 400px;
+    overflow: scroll;
+    padding: 20px;
+    .address-selector-item{
+        display: flex;
+        background-color: #f0f3e9;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        padding:10px;
+        div{
+            margin: 10px;
+        }
+        div:nth-child(1){
+            span:nth-child(1){
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+        button{
+            background-color: #e69797;
+            font-size: 15px;
+            font-weight: bold;
+            color:white;
+            border-radius: 20px;
+            height: 35px;
+            width: 80px;
+        }
+    }
+ 
+}
+.mask{
+    background-color: #bfbfbfad;
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+}

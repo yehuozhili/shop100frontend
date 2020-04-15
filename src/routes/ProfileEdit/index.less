@@ -1,0 +1,97 @@
+.edit-profile{
+    padding:30px;
+    font-size: 20px;
+    color: lightpink;
+    font-weight: bold;
+    .ant-form-item{
+        display:flex;
+        align-items: center;
+        .ant-form-item-label{
+            width:auto;
+            flex:30;
+        }
+        .ant-form-item-control-wrapper{
+            flex:100;
+            .ant-upload-picture-card-wrapper{
+                display: inline;
+            }
+        }
+    }
+    .submitbtn{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 50px;
+        .ant-btn{
+            width:60%;
+            color:white;
+            font-size: 20px;
+            height: 40px;
+            border-radius: 50px;
+            background-color:lightpink
+        }
+    }
+    .edit-head{
+        display:flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .ant-form-item-label{
+            flex:30;
+        }
+        .ant-upload-picture-card-wrapper{
+            flex:100;
+            .ant-upload-picture-card-wrapper{
+                display: inline;
+            }
+        }
+    }
+    .edit-profile-avatar{
+        display: flex;
+       
+        justify-content: flex-start;
+        align-items: center;
+        margin:10px;
+        .spliceupload{
+            flex:1;
+            position: relative;
+            .uploadicon{
+                left: 30%;
+                position: relative;
+            }
+        }
+        div:nth-child(1){
+            white-space: nowrap;
+        }
+    }
+    button{
+        background-color: lightpink;
+        color: white;
+        font-weight: bold;
+        &:hover{
+            background-color: lightpink;
+            color: white;
+            border:none;
+        }
+    }
+    .edit-profile-username{
+        display: flex;
+      
+        justify-content: flex-start;
+        align-items: center;
+        margin:10px;
+        input{
+            border:1px solid orange;
+            border-radius: 20px;
+            padding: 5px;
+            margin:10px;
+            flex:1;
+            &:focus{
+                outline: none;
+            }
+        }
+        div:nth-child(1){
+            white-space: nowrap;
+        }
+     
+    }
+}
